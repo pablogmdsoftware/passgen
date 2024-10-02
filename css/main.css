@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button{
 	background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -28,22 +27,22 @@ main {
 }
 
 .config {
-    background-color: #333;
+    background-color: #f2f8fc;
 }
 
 .passgen {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: steelblue;
+    background-color: #fbf5df;
     grid-row: 1 / 3;
     grid-column: 2 / 3;
 }
 
 .chrselection {
-    background-color: rebeccapurple;
-    display: grid;
-    place-content: center;
+    background-color: #f4f1f8;
+    display: flex;
+    align-items: center;
 }
 
 .passgen-form {
@@ -56,22 +55,38 @@ main {
 
 p {
     grid-column: 1 / 3;
-    background-color: #333;
+    background-color: skyblue;
     display: grid;
     place-content: center;
     font-size: 1.5rem;
-    color: whitesmoke;
+    color: black;
 }
 
 button {
     font-size: 1.5rem;
-    color: whitesmoke;    
+    color: black;    
+}
+
+button:active {
+    border: 3px solid  rgb(30, 178, 236);
 }
 
 .button-config {
-    background-color: #333;
+    background-color: skyblue;
 }
 
 .button-generate {
-    background-color: #333;
+    background-color: skyblue;
+}
+
+.chrbutton {
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 20%;
+    margin: 0.5rem;
+}
+
+.chrbutton:active {
+    border: 3px solid  rgb(30, 178, 236);
 }
