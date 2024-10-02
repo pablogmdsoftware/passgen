@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -32,6 +42,8 @@ main {
 
 .chrselection {
     background-color: rebeccapurple;
+    display: grid;
+    place-content: center;
 }
 
 .passgen-form {
