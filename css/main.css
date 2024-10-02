@@ -96,6 +96,7 @@ button:active {
     margin: 0.5rem;
 }
 
-.chrbutton:active {
-    border: 3px solid  rgb(30, 178, 236);
+.button-clicked {
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
 }
