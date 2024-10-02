@@ -5,13 +5,36 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 3fr 5fr;
+}
+
+.config {
+    background-color: #333;
 }
 
 .passgen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.chrselection {
+    background-color: rebeccapurple;
+}
+
+.passgen-form {
     width: 500px;
     height: 300px;
     display: grid;
@@ -21,7 +44,7 @@ body {
 
 p {
     grid-column: 1 / 3;
-    background-color: steelblue;
+    background-color: #333;
     display: grid;
     place-content: center;
     font-size: 1.5rem;
@@ -34,26 +57,9 @@ button {
 }
 
 .buttom-config {
-    background-color: rebeccapurple;
+    background-color: #333;
 }
 
 .buttom-generate {
     background-color: #333;
 }
-
-/* button {
-    width: 375px;
-    height: 200px;
-    background-color: #333;
-    font-size: 1.5rem;
-    color: whitesmoke;
-    border-radius: 1rem;
-}
-
-button:hover {
-    background-color: hsl(0, 0%, 15%);
-}
-
-button:active {
-    background-color: red;
-} */
