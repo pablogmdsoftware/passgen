@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --base-green: #81B622;
-    --olive-green: #3D550C;
-    --yellow-green: #ECF87F;
-    --green: #59981A;
-}
-
 button{
 	background: none;
 	color: inherit;
@@ -31,7 +24,6 @@ main {
     display: grid;
     grid-template-columns: 3fr 7fr;
     grid-template-rows: 3fr 5fr;
-    background-color: var(--yellow-green);
 }
 
 .config {
@@ -57,14 +49,13 @@ main {
     width: 500px;
     height: 300px;
     display: grid;
-    grid-template-rows: 7fr 3fr;
+    grid-template-rows: 5fr 2fr;
     grid-template-columns: 1fr;
-    background-color: var(--olive-green);
+    border: 3px solid black;
 }
 
 p {
     grid-column: 1 / 3;
-    /* background-color: skyblue; */
     display: grid;
     place-content: center;
     font-size: 1.5rem;
@@ -77,17 +68,16 @@ button {
 }
 
 button:active {
-    border: 3px solid  rgb(30, 178, 236);
+    border: 3px solid  whitesmoke;
 }
 
 .button-generate {
-    background-color: var(--olive-green);
+    border: 3px solid rgb(28, 163, 34);
 }
 
 .chrbutton {
     width: 50px;
     height: 50px;
-    background-color: var(--olive-green);
     border-radius: 20%;
     margin: 0.5rem;
 }
