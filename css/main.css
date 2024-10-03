@@ -48,7 +48,9 @@ main {
 .chrselection {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 3px solid black;
+    padding: 20%y;
 }
 
 .passgen-form {
@@ -84,8 +86,9 @@ button:active {
 .chrbutton {
     width: 50px;
     height: 50px;
-    border-radius: 20%;
-    margin: 0.5rem;
+    border-radius: 10%;
+    border-bottom-left-radius: 25%;
+    border: 2px solid black;
 }
 
 .button-clicked {
