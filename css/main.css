@@ -50,7 +50,15 @@ main {
     align-items: center;
     justify-content: center;
     border: 3px solid black;
-    padding: 20%y;
+    padding: 1rem;
+    background-color: aquamarine;
+}
+
+.button-array {
+    background-color: steelblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .passgen-form {
@@ -72,7 +80,7 @@ p {
 
 button {
     font-size: 1.5rem;
-    color: black;    
+    color: black;
 }
 
 button:active {
