@@ -24,7 +24,6 @@ return password;
 
 // End passgen functionality
 
-
 const addSet = new Set();
 
 const buttonList = document.querySelectorAll(".characterButton");
@@ -37,7 +36,7 @@ buttonList.forEach(buttonElement => {
         } else {
             buttonElement.classList.add("button--clicked");
             addSet.add(buttonElement.textContent);
-        }
+        };
         console.log(addSet);
     });
 });
