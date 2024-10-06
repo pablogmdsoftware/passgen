@@ -1,3 +1,5 @@
+// Start passgen functionality
+
 const lowerArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m",
     "n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
@@ -20,19 +22,22 @@ password += chrArray[Math.floor(Math.random()*95)];
 return password;
 }
 
+// End passgen functionality
+
+
+const addSet = new Set();
 
 const buttonList = document.querySelectorAll(".characterButton");
 
-console.log(buttonList);
-
 buttonList.forEach(buttonElement => {
-    console.log("n");
     buttonElement.addEventListener("click", () => {
         if (buttonElement.classList.contains("button--clicked")) {
             buttonElement.classList.remove("button--clicked");
+            addSet.delete(buttonElement.textContent);
         } else {
             buttonElement.classList.add("button--clicked");
+            addSet.add(buttonElement.textContent);
         }
-        console.log("Something here");
+        console.log(addSet);
     });
 });
