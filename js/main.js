@@ -40,3 +40,10 @@ buttonList.forEach(buttonElement => {
         console.log(addSet);
     });
 });
+
+const pw = document.getElementsByClassName("password")[0];
+const buttonGenerate = document.getElementsByClassName("buttonGenerate")[0];
+
+buttonGenerate.addEventListener("click", () => {
+    pw.textContent = passgen(24);
+});
