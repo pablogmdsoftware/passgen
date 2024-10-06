@@ -28,13 +28,18 @@ main {
 
 .configuration {
     display: grid;
-    grid-template-rows: 3fr 5fr;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-columns: 1fr;
 }
 
 .config {
     border: 3px solid black;
 }
+
+.config-characterType {
+    border: 3px solid black;
+}
+
 
 .passgen {
     display: flex;
@@ -46,9 +51,9 @@ main {
 }
 
 .chrselection {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     border: 3px solid black;
     padding: 1rem;
     background-color: aquamarine;
@@ -59,6 +64,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .passgen-form {
