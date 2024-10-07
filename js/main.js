@@ -20,7 +20,19 @@ for (let n=0; n<x; n++) {
 password += chrArray[Math.floor(Math.random()*95)];
 };
 return password;
-}
+};
+
+function passgen2(x,set) {
+    let passwordArray = passgen(x-set.size).split("");
+    for (y of set) {
+        passwordArray.splice(Math.floor(Math.random()*passwordArray.length),0,y);
+    }
+    let password2 = "";
+    for (m in passwordArray) {
+        password2 += passwordArray[m];
+    }
+    return password2;
+};
 
 // End passgen functionality
 
@@ -48,7 +60,7 @@ const lengthInput = document.getElementById("lengthInput");
 const lengthNumber = document.getElementById("lengthNumber");
 
 buttonGenerate.addEventListener("click", () => {
-    pw.textContent = passgen(lengthInput.value);
+    pw.textContent = passgen2(lengthInput.value,addSet);
 });
 
 lengthInput.oninput = (() => {
