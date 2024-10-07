@@ -44,6 +44,13 @@ buttonList.forEach(buttonElement => {
 const pw = document.getElementsByClassName("password")[0];
 const buttonGenerate = document.getElementsByClassName("buttonGenerate")[0];
 
+const lengthInput = document.getElementById("lengthInput");
+const lengthNumber = document.getElementById("lengthNumber");
+
 buttonGenerate.addEventListener("click", () => {
-    pw.textContent = passgen(24);
+    pw.textContent = passgen(lengthInput.value);
+});
+
+lengthInput.oninput = (() => {
+    lengthNumber.textContent = lengthInput.value
 });

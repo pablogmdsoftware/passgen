@@ -92,6 +92,11 @@ button:active {
     color: whitesmoke;
 }
 
+#lengthInput {
+    width: 80%;
+    height: 20%;
+}
+
 /* Passgen section */
 
 .passgen {
