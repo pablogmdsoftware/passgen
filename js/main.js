@@ -56,14 +56,19 @@ buttonList.forEach(buttonElement => {
 
 const pw = document.getElementsByClassName("password")[0];
 const buttonGenerate = document.getElementsByClassName("buttonGenerate")[0];
+const copyButton = document.getElementsByClassName("copyButton")[0];
+
+buttonGenerate.addEventListener("click", () => {
+    pw.value = passgen2(lengthInput.value,addSet);
+});
+
+copyButton.addEventListener("click", () => {
+    navigator.clipboard.writeText(pw.value);
+})
 
 const lengthInput = document.getElementById("lengthInput");
 const lengthNumber = document.getElementById("lengthNumber");
 
-buttonGenerate.addEventListener("click", () => {
-    pw.textContent = passgen2(lengthInput.value,addSet);
-});
-
 lengthInput.oninput = (() => {
-    lengthNumber.textContent = lengthInput.value
+    lengthNumber.textContent = lengthInput.value;
 });

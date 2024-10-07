@@ -117,6 +117,18 @@ button:active {
     border: 3px solid black;
 }
 
+.passgen-form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .buttonGenerate {
     border: 3px solid rgb(28, 163, 34);
+}
+
+.password {
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
 }
