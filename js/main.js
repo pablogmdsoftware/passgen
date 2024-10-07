@@ -27,6 +27,7 @@ function passgen2(x,set) {
     for (y of set) {
         passwordArray.splice(Math.floor(Math.random()*(passwordArray.length+1)),0,y);
     }
+    if (set.has("space")) {passwordArray[passwordArray.indexOf("space")] = " "};
     let password2 = "";
     for (m in passwordArray) {
         password2 += passwordArray[m];
