@@ -25,7 +25,7 @@ return password;
 function passgen2(x,set) {
     let passwordArray = passgen(x-set.size).split("");
     for (y of set) {
-        passwordArray.splice(Math.floor(Math.random()*passwordArray.length),0,y);
+        passwordArray.splice(Math.floor(Math.random()*(passwordArray.length+1)),0,y);
     }
     let password2 = "";
     for (m in passwordArray) {
