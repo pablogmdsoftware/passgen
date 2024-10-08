@@ -72,7 +72,7 @@ buttonGenerate.addEventListener("click", () => {
 
 copyButton.addEventListener("click", () => {
     navigator.clipboard.writeText(pw.value);
-})
+});
 
 const lengthInput = document.getElementById("lengthInput");
 const lengthNumber = document.getElementById("lengthNumber");
