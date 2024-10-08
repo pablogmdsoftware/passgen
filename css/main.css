@@ -60,6 +60,7 @@ button:active {
 
 .config-characterType {
     border: 3px solid black;
+    font-size: 1.5rem;
 }
 
 .config-addCharacter {
