@@ -12,12 +12,14 @@ const spcArray = ["\""," ","!","#","$","%","&","'","(",")","*","+",",",
   "-",".","/",":",";","<","=",">","?","@","[","]","\\",
   "^","_","`","{","}","|","~",];
 
-const chrArray = [...lowerArray, ...upperArray, ...numArray, ...spcArray];
+let chrArray = [...lowerArray, ...upperArray, ...numArray, ...spcArray];
+let chrArrayCache = true;
 
-function passgen(x=24) {
+function passgen(x=24,array=chrArray) {
 let password = "";
+m = array.length;
 for (let n=0; n<x; n++) {
-password += chrArray[Math.floor(Math.random()*95)];
+password += array[Math.floor(Math.random()*m)];
 };
 return password;
 };
@@ -64,11 +66,43 @@ buttonList.forEach(buttonElement => {
 
 const pw = document.getElementsByClassName("password")[0];
 const buttonGenerate = document.getElementsByClassName("buttonGenerate")[0];
-const copyButton = document.getElementsByClassName("copyButton")[0];
+const checkboxArray = document.querySelectorAll(".checkboxInput");
+
+const lowerLetters = document.getElementById("lowerLetters");
+const upperLetters = document.getElementById("upperLetters");
+const numbers = document.getElementById("numbers");
+const specialCharacters = document.getElementById("specialCharacters");
+
+checkboxArray.forEach(checkbox => {
+    checkbox.addEventListener("click", () => {
+        chrArrayCache = false;
+    });
+});
 
 buttonGenerate.addEventListener("click", () => {
-    pw.value = passgen2(lengthInput.value,addSet);
+    if (chrArrayCache) {
+        pw.value = passgen2(lengthInput.value,addSet);
+    } else {
+        chrArray = [];
+        if (lowerLetters.checked) {
+            chrArray = chrArray.concat(lowerArray);
+        }; 
+        if (upperLetters.checked) {
+            chrArray = chrArray.concat(upperArray);
+        };
+        if (numbers.checked) {
+            chrArray = chrArray.concat(numArray);
+        };
+        if (specialCharacters.checked) {
+            chrArray = chrArray.concat(spcArray);
+        };
+        chrArrayCache = true;
+        console.log("Cache modified")
+        pw.value = passgen2(lengthInput.value,addSet);
+    }
 });
+
+const copyButton = document.getElementsByClassName("copyButton")[0];
 
 copyButton.addEventListener("click", () => {
     navigator.clipboard.writeText(pw.value);
