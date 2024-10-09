@@ -73,20 +73,27 @@ const upperLetters = document.getElementById("upperLetters");
 const numbers = document.getElementById("numbers");
 const specialCharacters = document.getElementById("specialCharacters");
 
-checkboxArray.forEach(checkbox => {
-    checkbox.addEventListener("click", () => {
-        chrArrayCache = false;
-    });
+lowerLetters.addEventListener("click", (event) => {
+    event.preventDefault();
+});
+
+upperLetters.addEventListener("click", () => {
+    chrArrayCache = false;
+});
+
+numbers.addEventListener("click", () => {
+    chrArrayCache = false;
+});
+
+specialCharacters.addEventListener("click", () => {
+    chrArrayCache = false;
 });
 
 buttonGenerate.addEventListener("click", () => {
     if (chrArrayCache) {
         pw.value = passgen2(lengthInput.value,addSet);
     } else {
-        chrArray = [];
-        if (lowerLetters.checked) {
-            chrArray = chrArray.concat(lowerArray);
-        }; 
+        chrArray = [...lowerArray];
         if (upperLetters.checked) {
             chrArray = chrArray.concat(upperArray);
         };
