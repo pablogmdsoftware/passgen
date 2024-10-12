@@ -53,11 +53,11 @@ const buttonList = document.querySelectorAll(".characterButton");
 
 buttonList.forEach(buttonElement => {
     buttonElement.addEventListener("click", () => {
-        if (buttonElement.classList.contains("button--clicked")) {
-            buttonElement.classList.remove("button--clicked");
+        if (buttonElement.classList.contains("--clicked")) {
+            buttonElement.classList.remove("--clicked");
             addSet.delete(buttonElement.textContent);
         } else {
-            buttonElement.classList.add("button--clicked");
+            buttonElement.classList.add("--clicked");
             addSet.add(buttonElement.textContent);
         };
         console.log(addSet);

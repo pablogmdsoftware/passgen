@@ -88,7 +88,7 @@ button:active {
     border: 2px solid black;
 }
 
-.button--clicked {
+.--clicked {
     border: 3px solid whitesmoke;
     color: whitesmoke;
 }
