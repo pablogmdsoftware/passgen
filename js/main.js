@@ -60,7 +60,6 @@ buttonList.forEach(buttonElement => {
             buttonElement.classList.add("--clicked");
             addSet.add(buttonElement.textContent);
         };
-        console.log(addSet);
     });
 });
 
