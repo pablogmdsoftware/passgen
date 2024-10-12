@@ -103,9 +103,11 @@ buttonGenerate.addEventListener("click", () => {
             chrArray = chrArray.concat(spcArray);
         };
         chrArrayCache = true;
-        console.log("Cache modified")
+        console.log("Cache modified");
         pw.value = passgen2(lengthInput.value,addSet);
     }
+    if (lengthInput.value < addSet.size) {lengthInput.value = addSet.size};
+    lengthNumber.textContent = lengthInput.value
 });
 
 const copyButton = document.getElementsByClassName("copyButton")[0];
