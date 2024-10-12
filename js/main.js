@@ -48,7 +48,7 @@ document.addEventListener("readystatechange", (event) => {
 
 const initApp = () => {
 
-const addSet = new Set();
+const addSet = new Set(["space","\"",",",";",":","-"]);
 const buttonList = document.querySelectorAll(".characterButton");
 
 buttonList.forEach(buttonElement => {
