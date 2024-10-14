@@ -60,21 +60,24 @@ button:active {
 }
 
 .config-passwordLength {
-    border: 3px solid black;
+    border: 1px solid slategray;
+    margin: 0.5rem 1rem;
 }
 
 .config-characterType {
-    border: 3px solid black;
+    border: 1px solid slategray;
     font-size: 1.5rem;
+    margin: 0.5rem 1rem;
 }
 
 .config-addCharacter {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    border: 3px solid black;
+    border: 1px solid slategray;
     padding: 1rem;
     background-color: aquamarine;
+    margin: 0.5rem 1rem;
 }
 
 .buttonArray {
