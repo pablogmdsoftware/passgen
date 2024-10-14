@@ -9,36 +9,34 @@
 <body>
     <main>
         <section class="config">
-            <article class="config-passwordLength">
-                <p>Select the length of the password</p>
+            <fieldset class="config-passwordLength">
+                <legend>Select the length of the password</legend>
                 <div>
                     <input id="lengthInput" type="range" min="8" max="36" value="24" step="1">
-                    <p id="lengthNumber">24</p>
+                    <label for="lengthInput" id="lengthNumber">24</label>
                 </div>
-            </article>
-            <article class="config-characterType">
-                <fieldset>
-                    <legend>Select the characters allowed</legend>
-                    <div>
-                        <input type="checkbox" checked id="lowerLetters" class="checkboxInput">
-                        <label for="lowerLetters">Lower letters</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" checked id="upperLetters" class="checkboxInput">
-                        <label for="upperLetters">Upper letters</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" checked id="numbers" class="checkboxInput">
-                        <label for="numbers">Numbers</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" checked id="specialCharacters" class="checkboxInput">
-                        <label for="specialCharacters">Special characters</label>
-                    </div>
-                </fieldset>
-            </article>
-            <article class="config-addCharacter">
-                <p>Select the characters you want to have in the password</p>
+            </fieldset>
+            <fieldset class="config-characterType">
+                <legend>Select the characters allowed</legend>
+                <div>
+                    <input type="checkbox" checked id="lowerLetters" class="checkboxInput">
+                    <label for="lowerLetters">Lower letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked id="upperLetters" class="checkboxInput">
+                    <label for="upperLetters">Upper letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked id="numbers" class="checkboxInput">
+                    <label for="numbers">Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked id="specialCharacters" class="checkboxInput">
+                    <label for="specialCharacters">Special characters</label>
+                </div>
+            </fieldset>
+            <fieldset class="config-addCharacter">
+                <legend>Select the characters you want to have in the password</legend>
                 <div class="buttonArray">
                     <button class="characterButton --clicked">space</button>
                     <button class="characterButton --clicked">"</button>
@@ -74,7 +72,7 @@
                     <button class="characterButton">|</button>
                     <button class="characterButton">~</button>
                 </div>
-            </article>
+            </fieldset>
         </section>
         <section class="passgen">
             <div class="passgen-form">
