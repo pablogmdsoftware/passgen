@@ -31,6 +31,12 @@ input {
 
 /* General styles */
 
+.nowrap {
+    white-space: nowrap;
+}
+
+/* Layout */
+
 body {
     min-height: 100vh;
     display: flex;
