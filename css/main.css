@@ -15,12 +15,23 @@ button{
 	outline: inherit;
 }
 
+/* Variables */
+
+:root {
+    --slate-gray: #77878B;
+    --slate-gray-dark: #305252;
+    --onyx: #373E40;
+    --teal: #488286;
+    --light-blue: #B7D5D4;
+}
+
 /* General styles */
 
 body {
     height: 100vh;
     /* display: flex;
     flex-direction: column; */
+    background-color: whitesmoke;
 }
 
 main {
@@ -60,12 +71,12 @@ button:active {
 }
 
 .config-passwordLength {
-    border: 1px solid slategray;
+    border: 2px solid var(--slate-gray-dark);
     margin: 0.5rem 1rem;
 }
 
 .config-characterType {
-    border: 1px solid slategray;
+    border: 2px solid var(--slate-gray-dark);
     font-size: 1.5rem;
     margin: 0.5rem 1rem;
 }
@@ -74,14 +85,12 @@ button:active {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    border: 1px solid slategray;
+    border: 2px solid var(--slate-gray-dark);
     padding: 1rem;
-    background-color: aquamarine;
     margin: 0.5rem 1rem;
 }
 
 .buttonArray {
-    background-color: steelblue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,8 +106,8 @@ button:active {
 }
 
 .--clicked {
-    border: 3px solid whitesmoke;
-    color: whitesmoke;
+    border: 3px solid var(--teal);
+    color: var(--teal);
 }
 
 #lengthInput {
@@ -114,7 +123,6 @@ button:active {
     justify-content: center;
     grid-row: 1 / 3;
     grid-column: 2 / 3;
-    border: 3px solid black;
 }
 
 .passgen-form {
