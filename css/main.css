@@ -144,25 +144,12 @@ button:active {
 
 .passgen-form {
     width: 500px;
-    height: 300px;
+    height: 75px;
     display: grid;
-    grid-template-rows: 5fr 2fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 5fr 2fr;
     border: 3px solid black;
-}
-
-.passgen-form div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .buttonGenerate {
     border: 3px solid rgb(28, 163, 34);
-}
-
-.password {
-    width: 80%;
-    height: 2rem;
-    font-size: 1.5rem;
 }

@@ -90,7 +90,7 @@ specialCharacters.addEventListener("click", () => {
 
 buttonGenerate.addEventListener("click", () => {
     if (chrArrayCache) {
-        pw.value = passgen2(lengthInput.value,addSet);
+        pw.textContent = passgen2(lengthInput.value,addSet);
     } else {
         chrArray = [...lowerArray];
         if (upperLetters.checked) {
@@ -104,7 +104,7 @@ buttonGenerate.addEventListener("click", () => {
         };
         chrArrayCache = true;
         console.log("Cache modified");
-        pw.value = passgen2(lengthInput.value,addSet);
+        pw.textContent = passgen2(lengthInput.value,addSet);
     }
     if (lengthInput.value < addSet.size) {lengthInput.value = addSet.size};
     lengthNumber.textContent = lengthInput.value
@@ -113,7 +113,7 @@ buttonGenerate.addEventListener("click", () => {
 const copyButton = document.getElementsByClassName("copyButton")[0];
 
 copyButton.addEventListener("click", () => {
-    navigator.clipboard.writeText(pw.value);
+    navigator.clipboard.writeText(pw.textContent);
 });
 
 const lengthInput = document.getElementById("lengthInput");
