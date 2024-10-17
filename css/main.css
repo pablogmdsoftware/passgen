@@ -28,7 +28,7 @@ input {
     --slate-gray-dark: #305252;
     --onyx: #373E40;
     --teal: #488286;
-    --light-blue: #B7D5D4;
+    --light-blue: #256866;
 }
 
 /* Variables */
@@ -37,6 +37,10 @@ input {
 
 .nowrap {
     white-space: nowrap;
+}
+
+.nodisplay {
+    display: none;
 }
 
 /* General styles */
@@ -133,7 +137,7 @@ button:active {
 }
 
 .characterButton--space {
-    width: calc(100px + 0.5rem);
+    width: calc(100px + 0.4rem);
 }
 
 .--clicked {
