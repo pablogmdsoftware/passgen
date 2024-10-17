@@ -122,10 +122,8 @@ main {
 
 /* Components */
 
-p, #lengthNumber {
-    display: grid;
-    place-content: center;
-    color: black;
+#lengthNumber {
+    color: whitesmoke;
 }
 
 button:active {
@@ -165,6 +163,16 @@ button:active {
     border: 2px solid black;
     border-left: none;
     border-radius: 0 1rem 1rem 0;
+}
+
+.lengthCircle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #256866;
+    display: grid;
+    place-content: center;
+    color: whitesmoke;
 }
 
 /* Components */
