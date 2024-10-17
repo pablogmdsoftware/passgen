@@ -55,6 +55,7 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 p, #lengthNumber {
@@ -79,12 +80,6 @@ button:active {
 }
 
 /* Config section */
-
-.config {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .config-passwordLength {
     width: 80%;
@@ -136,12 +131,6 @@ button:active {
 }
 
 /* Passgen section */
-
-.passgen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .passgen-form {
     width: 500px;

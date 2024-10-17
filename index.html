@@ -11,78 +11,74 @@
         <h1>Password Generator</h1>
     </header>
     <main>
-        <section class="passgen">
-            <div class="passgen-form">
-                <button class="buttonGenerate password">Click to generate</button>
-                <button class="copyButton">Copy</button>
+        <div class="passgen-form">
+            <button class="buttonGenerate password">Click to generate</button>
+            <button class="copyButton">Copy</button>
+        </div>
+        <fieldset class="config-passwordLength">
+            <legend>Select the length of the password</legend>
+            <div>
+                <input id="lengthInput" type="range" min="8" max="36" value="24" step="1">
+                <label for="lengthInput" id="lengthNumber">24</label>
             </div>
-        </section>
-        <section class="config">
-            <fieldset class="config-passwordLength">
-                <legend>Select the length of the password</legend>
-                <div>
-                    <input id="lengthInput" type="range" min="8" max="36" value="24" step="1">
-                    <label for="lengthInput" id="lengthNumber">24</label>
-                </div>
-            </fieldset>
-            <fieldset class="config-characterType">
-                <legend>Select the characters allowed</legend>
-                <div>
-                    <input type="checkbox" checked id="lowerLetters" class="checkboxInput">
-                    <label for="lowerLetters"><span class="nowrap">Lower letters</span></label>
-                </div>
-                <div>
-                    <input type="checkbox" checked id="upperLetters" class="checkboxInput">
-                    <label for="upperLetters"><span class="nowrap">Upper letters</span></label>
-                </div>
-                <div>
-                    <input type="checkbox" checked id="numbers" class="checkboxInput">
-                    <label for="numbers">Numbers</label>
-                </div>
-                <div>
-                    <input type="checkbox" checked id="specialCharacters" class="checkboxInput">
-                    <label for="specialCharacters"><span class="nowrap">Special characters</span></label>
-                </div>
-            </fieldset>
-            <fieldset class="config-addCharacter">
-                <legend>Select the characters you want to have in the password</legend>
-                <div class="buttonArray">
-                    <button class="characterButton --clicked">space</button>
-                    <button class="characterButton --clicked">"</button>
-                    <button class="characterButton">!</button>
-                    <button class="characterButton">#</button>
-                    <button class="characterButton">$</button>
-                    <button class="characterButton">%</button>
-                    <button class="characterButton">&</button>
-                    <button class="characterButton">'</button>
-                    <button class="characterButton">(</button>
-                    <button class="characterButton">)</button>
-                    <button class="characterButton">*</button>
-                    <button class="characterButton">+</button>
-                    <button class="characterButton --clicked">,</button>
-                    <button class="characterButton --clicked">-</button>
-                    <button class="characterButton">.</button>
-                    <button class="characterButton">/</button>
-                    <button class="characterButton --clicked">:</button>
-                    <button class="characterButton --clicked">;</button>
-                    <button class="characterButton">&#60;</button>
-                    <button class="characterButton">=</button>
-                    <button class="characterButton">&#62;</button>
-                    <button class="characterButton">?</button>
-                    <button class="characterButton">@</button>
-                    <button class="characterButton">[</button>
-                    <button class="characterButton">]</button>
-                    <button class="characterButton">\</button>
-                    <button class="characterButton">^</button>
-                    <button class="characterButton">_</button>
-                    <button class="characterButton">`</button>
-                    <button class="characterButton">{</button>
-                    <button class="characterButton">}</button>
-                    <button class="characterButton">|</button>
-                    <button class="characterButton">~</button>
-                </div>
-            </fieldset>
-        </section>
+        </fieldset>
+        <fieldset class="config-characterType">
+            <legend>Select the characters allowed</legend>
+            <div>
+                <input type="checkbox" checked id="lowerLetters" class="checkboxInput">
+                <label for="lowerLetters"><span class="nowrap">Lower letters</span></label>
+            </div>
+            <div>
+                <input type="checkbox" checked id="upperLetters" class="checkboxInput">
+                <label for="upperLetters"><span class="nowrap">Upper letters</span></label>
+            </div>
+            <div>
+                <input type="checkbox" checked id="numbers" class="checkboxInput">
+                <label for="numbers">Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" checked id="specialCharacters" class="checkboxInput">
+                <label for="specialCharacters"><span class="nowrap">Special characters</span></label>
+            </div>
+        </fieldset>
+        <fieldset class="config-addCharacter">
+            <legend>Select the characters you want to have in the password</legend>
+            <div class="buttonArray">
+                <button class="characterButton --clicked">space</button>
+                <button class="characterButton --clicked">"</button>
+                <button class="characterButton">!</button>
+                <button class="characterButton">#</button>
+                <button class="characterButton">$</button>
+                <button class="characterButton">%</button>
+                <button class="characterButton">&</button>
+                <button class="characterButton">'</button>
+                <button class="characterButton">(</button>
+                <button class="characterButton">)</button>
+                <button class="characterButton">*</button>
+                <button class="characterButton">+</button>
+                <button class="characterButton --clicked">,</button>
+                <button class="characterButton --clicked">-</button>
+                <button class="characterButton">.</button>
+                <button class="characterButton">/</button>
+                <button class="characterButton --clicked">:</button>
+                <button class="characterButton --clicked">;</button>
+                <button class="characterButton">&#60;</button>
+                <button class="characterButton">=</button>
+                <button class="characterButton">&#62;</button>
+                <button class="characterButton">?</button>
+                <button class="characterButton">@</button>
+                <button class="characterButton">[</button>
+                <button class="characterButton">]</button>
+                <button class="characterButton">\</button>
+                <button class="characterButton">^</button>
+                <button class="characterButton">_</button>
+                <button class="characterButton">`</button>
+                <button class="characterButton">{</button>
+                <button class="characterButton">}</button>
+                <button class="characterButton">|</button>
+                <button class="characterButton">~</button>
+            </div>
+        </fieldset>
     </main>
     <footer></footer>
     <script src="js/main.js"></script>
