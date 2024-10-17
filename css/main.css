@@ -119,10 +119,9 @@ p, #lengthNumber {
 }
 
 button:active {
-    border: 3px solid  whitesmoke;
+    border: 3px solid var(--onyx);
+    color: var(--onyx);
 }
-
-
 
 .characterButton {
     width: 50px;
