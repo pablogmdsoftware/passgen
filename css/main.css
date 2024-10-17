@@ -70,7 +70,7 @@ main {
 
 /* Main elements */
 
-.passgen-form {
+.passgen {
     width: 500px;
     height: 75px;
     display: grid;
