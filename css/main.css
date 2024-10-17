@@ -19,6 +19,10 @@ input {
     background-color: inherit;
 }
 
+fieldset {
+    border: none;
+}
+
 /* Normalize */
 
 /* Variables */
@@ -58,7 +62,7 @@ body {
 
 header {
     width: 100%;
-    height: 75px;
+    height: 20vh;
     display: grid;
     place-content: center;
 }
@@ -79,15 +83,16 @@ main {
     height: 75px;
     display: grid;
     grid-template-columns: 5fr 2fr;
-    border: 3px solid black;
+    margin: 1rem 0;
 }
 
 .config-passwordLength {
     width: 80%;
-    border: 2px solid var(--slate-gray-dark);
     margin: 0.5rem 1rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1rem 0;
 }
 
 .config-characterType {
@@ -95,17 +100,15 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    border: 2px solid var(--slate-gray-dark);
-    margin: 0.5rem 1rem;
+    margin: 1rem 0;
 }
 
 .config-addCharacter {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    border: 2px solid var(--slate-gray-dark);
     padding: 1rem;
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem;
     max-width: 80%;
 }
 
@@ -149,12 +152,19 @@ button:active {
 }
 
 #lengthInput {
-    width: 80%;
+    width: 60%;
     height: 20%;
 }
 
 .buttonGenerate {
-    border: 3px solid rgb(28, 163, 34);
+    border: 2px solid black;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.copyButton {
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0 1rem 1rem 0;
 }
 
 /* Components */
