@@ -92,6 +92,7 @@ main {
     width: 80%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     border: 2px solid var(--slate-gray-dark);
     margin: 0.5rem 1rem;
 }
