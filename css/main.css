@@ -85,8 +85,9 @@ main {
 }
 
 .config-characterType {
+    width: 80%;
     display: flex;
-    flex: row wrap;
+    flex-flow: row wrap;
     border: 2px solid var(--slate-gray-dark);
     margin: 0.5rem 1rem;
 }
@@ -99,6 +100,12 @@ main {
     padding: 1rem;
     margin: 0.5rem 1rem;
     max-width: 80%;
+}
+
+.buttonArray {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 /* Main elements */
@@ -115,12 +122,7 @@ button:active {
     border: 3px solid  whitesmoke;
 }
 
-.buttonArray {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
+
 
 .characterButton {
     width: 50px;
@@ -128,6 +130,7 @@ button:active {
     border-radius: 10%;
     border-bottom-left-radius: 25%;
     border: 2px solid black;
+    margin: 0.2rem;
 }
 
 .--clicked {
