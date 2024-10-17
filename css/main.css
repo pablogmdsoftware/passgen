@@ -86,6 +86,8 @@ main {
     width: 80%;
     border: 2px solid var(--slate-gray-dark);
     margin: 0.5rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .config-characterType {
