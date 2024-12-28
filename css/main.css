@@ -55,8 +55,6 @@ fieldset {
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     background-color: whitesmoke;
     font-size: 1.2rem;
     font-family: 'Roboto';
@@ -64,14 +62,13 @@ body {
 }
 
 header {
-    width: 100%;
     height: 20vh;
+    min-height: 100px;
     display: grid;
     place-content: center;
 }
 
 main {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
