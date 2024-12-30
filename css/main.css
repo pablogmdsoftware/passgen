@@ -95,25 +95,25 @@ main {
 /* Main elements */
 
 .passgen {
-    width: 500px;
-    height: 75px;
+    width: 100%;
+    max-width: 500px;
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: auto;
+    grid-template-rows: 75px 50px;
     grid-row: 1;
     grid-column: 1 / 5;
     place-self: center;
 }
 
 .config-passwordLength {
-    padding: 0 10%;
-    margin: 0.5rem 1rem;
     display: flex;
+    display: none;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
     align-items: center;
     grid-row: 2;
     grid-column: 1 / 5;
-    place-self: center;
+    place-self: start;
 }
 
 .config-characterType {
@@ -169,13 +169,13 @@ button:active {
 
 .buttonGenerate {
     border: 2px solid black;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 16px 16px 0 0;
 }
 
 .copyButton {
     border: 2px solid black;
-    border-left: none;
-    border-radius: 0 1rem 1rem 0;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
 }
 
 .lengthCircle {
@@ -208,15 +208,28 @@ button:active {
     }
     .passgen {
         grid-column: 1 / 7;
+        height: 75px;
+        grid-template-columns: 5fr 2fr;
+        grid-template-rows: auto;
     }
     .config-passwordLength {
-        grid-column: 1 / 7;
+        grid-column: 2 / 6;
     }
     .config-characterType {
         grid-column: 2 / 6;
     }  
     .config-addCharacter {
         grid-column: 2 / 6;
+    }
+    .buttonGenerate {
+        border: 2px solid black;
+        border-radius: 16px 0 0 16px;
+    }
+    
+    .copyButton {
+        border: 2px solid black;
+        border-left: none;
+        border-radius: 0 16px 16px 0;
     }
 }
 
@@ -233,7 +246,7 @@ button:active {
         grid-column: 1 / 13;
     }   
     .config-passwordLength {
-        grid-column: 1 / 13;
+        grid-column: 3 / 11;
     }   
     .config-characterType {
         grid-column: 3 / 11;
