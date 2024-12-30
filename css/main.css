@@ -61,6 +61,12 @@ fieldset {
     display: none;
 }
 
+@media screen and (min-width: 576px) {
+    .mobileOnly {
+        display: none !important;
+    }
+}
+
 /* General styles */
 
 /* Layout */
@@ -90,27 +96,31 @@ main {
     padding: 0 16px 16px 16px;
 }
 
+legend, .legend {
+    margin-bottom: 0.9rem;
+    font-weight: 500;
+}
+
 /* Layout */
 
 /* Main elements */
 
 .passgen {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 75px 50px;
     grid-row: 1;
     grid-column: 1 / 5;
     place-self: center;
+    margin-bottom: 8px;
 }
 
 .config-passwordLength {
     display: flex;
-    display: none;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;  
-    align-items: center;
     grid-row: 2;
     grid-column: 1 / 5;
     place-self: start;
@@ -118,10 +128,15 @@ main {
 
 .config-characterType {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     grid-row: 3;
     grid-column: 1 / 5;
+}
+
+.config-characterType > div {
+    margin-bottom: 0.9rem;
+    margin-left: 0.5rem;
 }
 
 .config-addCharacter {
@@ -163,7 +178,8 @@ button:active {
 }
 
 #lengthInput {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 20%;
 }
 
@@ -190,6 +206,8 @@ button:active {
 }
 
 .sliderContainer {
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -208,15 +226,18 @@ button:active {
     }
     .passgen {
         grid-column: 1 / 7;
+        max-width: 500px;
         height: 75px;
         grid-template-columns: 5fr 2fr;
         grid-template-rows: auto;
     }
     .config-passwordLength {
         grid-column: 2 / 6;
+        align-items: center;
     }
     .config-characterType {
         grid-column: 2 / 6;
+        flex-flow: row wrap;
     }  
     .config-addCharacter {
         grid-column: 2 / 6;
@@ -230,6 +251,12 @@ button:active {
         border: 2px solid black;
         border-left: none;
         border-radius: 0 16px 16px 0;
+    }
+    .config-passwordLength {
+        flex-flow: row nowrap;
+    }
+    .legend {
+        font-weight: 400;
     }
 }
 
