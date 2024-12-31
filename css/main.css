@@ -238,9 +238,8 @@ button:active {
         grid-column: 2 / 6;
         align-items: center;
         place-self: center;
-        justify-content: start;
+        justify-content: center;
         flex-flow: row nowrap;
-        padding-left: 1rem;
     }
     .config-characterType {
         grid-column: 2 / 6;
@@ -276,9 +275,11 @@ button:active {
     .sliderContainer {
         width: 80%;
         max-width: none;
+        display: flex;
+        justify-content: center;
     }
-    #lengthInput {
-        width: 800px;
+    .lengthCircle {
+        width: 80px;
     }
 }
 
