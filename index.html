@@ -16,14 +16,17 @@
             <button class="copyButton">Copy</button>
         </div>
         <fieldset class="config-passwordLength">
-            <legend>Select the length of the password</legend>
-            <div>
+            <legend class="nodisplay">Select password length</legend>
+            <p class="legend mobileOnly"><span class="nowrap">Select length</span></p>
+            <div class="sliderContainer">
                 <input id="lengthInput" type="range" min="8" max="36" value="24" step="1">
-                <label for="lengthInput" id="lengthNumber">24</label>
+                <div class="lengthCircle">
+                    <label for="lengthInput" id="lengthNumber">24</label>
+                </div>
             </div>
         </fieldset>
         <fieldset class="config-characterType">
-            <legend>Select the characters allowed</legend>
+            <legend class="mobileOnly">Select character type</legend>
             <div>
                 <input type="checkbox" checked id="lowerLetters" class="checkboxInput">
                 <label for="lowerLetters"><span class="nowrap">Lower letters</span></label>
@@ -42,7 +45,7 @@
             </div>
         </fieldset>
         <fieldset class="config-addCharacter">
-            <legend>Select the characters you want to have in the password</legend>
+            <legend class="mobileOnly">Select characters</legend>
             <div class="buttonArray">
                 <button class="characterButton characterButton--space --clicked">space</button>
                 <button class="characterButton --clicked">"</button>
